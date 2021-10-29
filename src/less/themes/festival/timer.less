@@ -1,0 +1,46 @@
+.timer{
+  display: inline-block;
+  position: relative;
+  // padding-right: 50px;
+
+  &__item{
+    margin-right: @margin-timer-item;
+    padding: 0px 10px 30px 10px;
+    display: inline-block;
+    font-family: @font-third;
+    color: @color-timer-digits;
+    font-size: @font-size-timer/3;
+    line-height: 1;
+    position: relative;
+    text-align: center;
+    text-shadow: @text-shadow-timer;
+
+    @media screen and (min-width: @screen-sm-min){
+      padding: 0px 10px 50px 10px;
+      font-size: @font-size-timer;
+    }
+
+    &:first-child{
+      margin-left: -10px;
+    }
+
+    &:last-child{
+      margin: 0;
+      margin-right: -10px;
+    }
+  }
+
+  &__item-caption{
+    position: absolute;
+    font-family: @font-second;
+    color: @color-timer-captions;
+    font-size: 20px;
+    line-height: 1;
+    width: 100%;
+    left: 0px;
+    bottom: 0;
+    @media screen and (min-width: @screen-sm-min){
+      font-size: 30px;
+    }
+  }
+}

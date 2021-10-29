@@ -1,0 +1,123 @@
+.page-footer{
+
+  padding-top: 64px;
+
+  background-color: @color-footer-bg;
+  color: @color-footer-text;
+
+  h5{
+    margin-bottom: 14px;
+    color:@color-footer-text;
+    line-height: 48px;
+    font-weight: bold;
+  }
+
+  p{
+    margin-bottom: 15px;
+    color: @color-footer-text;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__socials{
+    margin-bottom: 15px;
+
+    @media screen and (min-width: @grid-float-breakpoint){
+      margin-bottom: 0;
+    }
+  }
+
+  &__contacts{
+
+    margin-bottom: 15px;
+
+    @media screen and (min-width: @grid-float-breakpoint){
+      margin-bottom: 0;
+    }
+
+    a{
+      display: block;
+      margin-bottom: 15px;
+      color: @color-footer-text;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__form{
+
+    margin-bottom: 80px;
+
+    p{
+      margin-bottom: 25px;
+    }
+
+    fieldset{
+      position: relative;
+      font-size: 0;
+      &:before {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        content: "";
+      }
+    }
+
+    input[type="text"]{
+      width: 60%;
+      margin-right: 13px;
+
+      vertical-align: bottom;
+
+      border: none;
+      border-bottom: 1px solid #ffffff;
+      background-color: transparent;
+      font-size: 16px;
+      line-height: 26px;
+
+      &::placeholder{
+        color: @color-footer-text;
+      }
+
+      @media screen and (min-width: @grid-float-breakpoint){
+        width: 50%;
+      }
+    }
+
+    button{
+          width: 35%;
+          vertical-align: bottom;
+          padding: 3px;
+          font-family: @font-third;
+          border: none;
+          border-radius: @size-btn-brdr-rad;;
+          background: @color-btn-grad--o;
+          background: @color-btn-grad--webkit;
+          background: @color-btn-grad;
+          text-transform: uppercase;
+
+          transition: all 0.3s;
+
+          &:hover span{
+            background: @color-footer-bg;
+          }
+
+          span{
+            width: 100%;
+            display: block;
+            font-size: 16px;
+            line-height: 40px;
+            color: @color-footer-text;
+            border-radius: @size-btn-brdr-rad;
+            transition: all 0.3s;
+          }
+        }
+  }
+
+  &__copyright{
+    text-align: center;
+    p{
+      color: #898888;
+    }
+  }
+}

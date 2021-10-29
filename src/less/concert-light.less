@@ -1,0 +1,241 @@
+// Main Bootstrap styles
+@import "bootstrap/bootstrap.less";
+@import "font-awesome/font-awesome.less";
+
+// This theme styles
+@import "themes/animate.less";
+@import "themes/icofont.less";
+@import "themes/concert/page-header.less";
+@import "themes/concert/page-footer.less";
+@import "themes/concert/hero.less";
+@import "themes/concert/layout.less";
+@import "themes/concert/timer.less";
+@import "themes/concert/polygon-block.less";
+@import "themes/concert/presentation.less";
+@import "themes/concert/video-block.less";
+@import "themes/concert/socials.less";
+@import "themes/concert/sponsors.less";
+@import "themes/concert/contacts.less";
+@import "themes/concert/tickets.less";
+@import "themes/concert/tracklist.less";
+
+@import "themes/concert/light-hello.less";
+
+@import "themes/concert/buttons.less";
+
+// Only for presentation
+@import "themes/switcher-styles.less";
+
+// Theme vars
+// Colors
+// Internal colors
+@color-white: #ffffff;
+@color-black: #000000;
+@color-black-1: #2f3030;
+@color-violet: #651ed0;
+@color-green: #09cf95;
+@color-gray: #1a1a1a;
+@color-gray--lighter: #b4b4b4;
+@color-gray-1: #554e4e;
+@color-gray-2: #eeeeee;
+@color-gray-3: #636363;
+@color-gray-4: #bebebe;
+@color-gray-5: #f2f2f2;
+
+@color-grad-white: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
+
+@background-clip-gradient: text;
+@text-fill-color-gradient: transparent;
+
+// Webkit-only gradient bg for headers
+// background: @color-bg-gradient;
+// -webkit-background-clip: @background-clip-gradient !important;
+// -webkit-text-fill-color: @text-fill-color-gradient !important;
+
+// Global colors
+// BGs
+@color-bg-gradient: @color-grad-white;
+@color-bg-gradient--normal:  @color-grad-white;
+
+@color-footer-bg: @color-black;
+@color-header-bg: @color-black;
+@color-main-bg: @color-white;
+@color-video-bg: @color-black;
+
+// Navs and main nav
+@color-nav-hamburger: @color-white;
+@color-nav-hamburger--is-toggled: @color-white;
+@color-hover-nav: @color-green;
+@color-nav-main: @color-white;
+@color-nav-secondary: @color-white;
+@color-brand: @color-white;
+
+// Tracklist
+@color-table-tracks: @color-black;
+@color-table-tracks--active: @color-green;
+@color-tracks-scrubber--not-loaded: @color-gray-3;
+@color-tracks-scrubber--loaded: @color-gray-3;
+@color-tracks-scrubber-gradient: @color-green;
+@back-image-tracklist: url("../img/bg-tracks-poly.png");
+
+@border-tracklist-play-main: none;
+@color-play-btn: @color-green;
+@color-play-btn-polygon--inner: @color-white;
+@color-play-btn-polygon--outer: @color-white;
+
+@border-tracklist-play-small: 2px solid @color-black;
+@color-play-btn-small-polygon--inner: @color-white;
+@color-play-btn-small-polygon--outer: @color-black;
+
+
+@color-bg-tracklist-volume: @color-gray-3;
+@color-bg-tracklist-volume--filled: @color-green;
+@color-icon-volume: @color-gray;
+
+@icon-play: "\ed88";
+@icon-play--next: "\f04b";
+@icon-font-family: "FontAwesome";
+
+// Common text and headers
+@color-text-main: @color-gray;
+@color-hero-header: @color-white;
+@color-hero-header--highlighted: @color-white;
+@color-second-header: @color-black-1;
+@color-text-highlighted: @color-green;
+@color-contacts-text: @color-gray;
+@color-hello-text: @color-gray-1;
+@color-rotated-text: @color-gray-2;
+@color-merch-header: @color-white;
+
+// Bands presentation
+@color-presentation-header: @color-white;
+@color-presentation-text: @color-white;
+@color-presentation-text--is-higlighted: @color-green;
+@color-bands-hover: @color-black;
+@color-presentation-mark: @color-green;
+
+// Btns and forms
+@color-btn-text: @color-white;
+@color-btn-hello: @color-black;
+@color-btn-bg: @color-green;
+@color-btn-footer-text: @color-black;
+@color-btn-grad: @color-green;
+@color-btn-grad--o: @color-green;
+@color-btn-grad--webkit: @color-green;
+
+// Other blocks and sections
+@color-soc-link: @color-white;
+@color-footer-text: @color-white;
+@color-features-shapes: @color-gray-5;
+@color-features-icons: @color-gray-4;
+@color-video-elements: @color-white;
+
+@back-image-tickets: none;
+@back-color-image-tickets: @color-main-bg;
+@back-color-image-tickets--hover: @color-black;
+@color-ticket-heading: @color-black;
+@color-ticket-heading--hover: @color-white;
+@color-ticket-price: @color-black;
+@color-ticket-price--hover: @color-white;
+@border-ticket--inner: 2px solid @color-black;
+@border-ticket--outer: 2px solid @color-green;
+
+// Sizes and positions
+@size-btn-brdr-rad: 0;
+@size-hero-margin-top: 100px;
+@size-hero-margin-bottom: 30px;
+@position-hero-bg: 0px;
+
+// Blocks
+
+// Polygon
+@fs-polygon-timer: 60px;
+@fs-polygon-timer-text: 18px;
+@fs-polygon-heading: 60px;
+@margin-polygon-timer--max: -224px;
+@margin-polygon-block--max: 57px;
+@margin-polygon-block--min: 57px;
+
+@color-polygon-heading: @color-black;
+@color-polygon-timer: @color-black;
+@color-polygon-timer-text: @color-black;
+@color-timer-separator: @color-white;
+
+@ff-polygon-heading: @font-second;
+@fw-polygon-heading: normal;
+
+@back-image-polygon: url("../img/polygon-transparent--green.png");
+
+// Video
+@color-video-poster-text: @color-white;
+@image-video-placeholder: url("../pics/video-placeholder-light.jpg");
+// @image-video-placeholder: url("../pics/video-placeholder-gray.jpg");
+
+// Fonts
+@font-face {
+ font-family: "Oswald Stencil";
+ src: url(../fonts/Oswald-Stencil.ttf);
+}
+@font-first: "Open Sans", Helvetica, Arial, sans-serif;
+@font-second: "Oswald", Helvetica, Arial, sans-serif;
+@font-third: "Oswald Stencil", Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: 'icofont';
+    src: url('../fonts/icofont.eot?v=1.0.0-beta');
+    src: url('../fonts/icofont.eot?v=1.0.0-beta#iefix') format('embedded-opentype'),
+    url('../fonts/icofont.ttf?v=1.0.0-beta') format('truetype'),
+    url('../fonts/icofont.woff?v=1.0.0-beta') format('woff'),
+    url('../fonts/icofont.svg?v=1.0.0-beta#icofont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Animations
+@keyframes contacts-poly {
+  0%   {
+    transform: rotate(-10deg) scale(1.025);
+    opacity: 1;
+  }
+  20%  {
+    transform: rotate(-10deg) scale(1.05);
+    opacity: 0.9;
+  }
+  35%  {
+    transform: rotate(-10deg) scale(1.1);
+    opacity: 0.8;
+  }
+  50%  {
+    transform: rotate(-10deg) scale(1.125);
+    opacity: 0.7;
+  }
+  65%  {
+    transform: rotate(-10deg) scale(1.15);
+    opacity: 0.6;
+  }
+}
+
+// Bootstrap vars
+@headings-font-family:    @font-second;
+
+@font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          16px;
+
+@font-size-h1:            floor((@font-size-base * 7.5)); // ~120px
+@font-size-h2:            floor((@font-size-base * 3.75)); // ~60px
+@font-size-h2:            calc(~'(100vw - 480px)/(1600 - 480) * (50 - 40) + 40px'); // ~50px
+@font-size-h2--smaller:            calc(~'(100vw - 480px)/(1600 - 480) * (50 - 20) + 20px'); // ~50px
+@font-size-h2--highlighted:            calc(~'(100vw - 480px)/(1600 - 480) * (60 - 50) + 50px'); // ~60px
+@font-size-h3:            ceil((@font-size-base * 3.1)); // ~50px
+@font-size-h4:            ceil((@font-size-base * 2.25)); // ~36px
+@font-size-h5:            ceil((@font-size-base * 1.25)); // ~20px
+
+@line-height-computed: 0px;
+
+// Body default
+@font-family-base: @font-first;
+@body-bg: @color-white;
+@text-color: @color-text-main;

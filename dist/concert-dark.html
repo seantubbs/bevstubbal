@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Event - Bootstrap Theme</title>
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Open+Sans|Oswald" rel="stylesheet">
+  <!-- inject:css -->
+  <link rel="stylesheet" href="components/lightgallery.min.css">
+  <!-- endinject -->
+  <link rel="stylesheet" href="css/concert-dark.css">
+</head>
+<body>
+<header class="page-header   js-page-header">
+  <div class="page-header__background   js-header-background" data-small="pics/concert-dark-header-bg--small.jpg" data-large="pics/concert-dark-header-bg.jpg"></div>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed    page-header__btn   js-mobile-menu-btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="page-header__brand   js-page-header__brand" href="#" aria-label="Site name: Event">
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="50" viewBox="0 0 150 50" aria-hidden="true">
+                <defs>
+                  <linearGradient id="brandgradient" x1="0%" x2="0%" y1="0%" y2="100%">
+                      <stop stop-color="#4051d0" offset="0%" />
+                      <stop stop-color="#7508d0" offset="50%" />
+                      <stop stop-color="#7508d0" offset="100%" />
+                  </linearGradient>
+                </defs>
+                <text class="page-header__brand-text" x="0" y="50" fill=url(#brandgradient)>
+                  Event.
+                </text>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse   page-header__nav" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#about-screen" class="page-header__link">about</a></li>
+              <li><a href="#stars-screen" class="page-header__link">stars</a></li>
+              <li><a href="#tracklist-screen" class="page-header__link">tracklist</a></li>
+              <li><a href="#pricing-screen" class="page-header__link">pricing</a></li>
+              <li><a href="#sponsors-screen" class="page-header__link">sponsors</a></li>
+              <li><a href="#contacts-screen" class="page-header__link">contacts</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12  wow fadeIn">
+          <h1 class="hero__header">R  u  ready to <br><span>rock?</span></h1>
+          <div class="hero__links-block">
+            <div class="hero__link button button--is-round"><a class="button__link" href="#">Whaaaat?</a></div>
+            <div class="hero__link button button--is-round"><a class="button__link" href="#">Yes, i’am!</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="layout-dark layout-dark__timer-screen">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p id="about-screen" class="layout-dark__greeting-text wow fadeIn">The coolest fest coming soon! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="layout-dark__polygon polygon-block wow bounceIn">
+          <div id="countdown" class="polygon-block__timer   timer">
+          </div>
+          <div class="polygon-block__heading">
+            <p class="polygon-block__heading-text">
+              <!-- coming</br>soon</br>! -->
+              <object class="polygon-block__svg-text" type="image/svg+xml" data="img/svg-coming-soon-text.svg">coming<br>soon<br>!</object>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-7 wow fadeIn">
+        <h2 id="stars-screen" class="layout-dark__section-header ">underground<br><span>celebrities</span></h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="layout-dark">
+  <div class="container-fluid">
+    <div class="presentation row">
+      <a href="#" class="presentation__link presentation__link--is-wide">
+        <div class="presentation__image-block">
+          <img class="presentation__image" src="pics/bg-headliner.jpg" alt="">
+        </div>
+        <div class="presentation__heading wow slideInRight">
+          <h3>headliner: <br><span>the dark star</span></h3>
+          <span class="presentation__info">(metalcore|hardcore)</span>
+        </div>
+      </a>
+      <a href="#" class="presentation__link">
+        <div class="presentation__image-block">
+          <img class="presentation__image" src="pics/bg-band-1.jpg" alt="">
+        </div>
+        <div class="presentation__heading wow slideInLeft">
+          <h3><span>mark singer</span></h3>
+          <span class="presentation__info">(alternative rock|acoustic)</span>
+        </div>
+      </a>
+      <a href="#" class="presentation__link">
+        <div class="presentation__image-block">
+          <img class="presentation__image" src="pics/bg-band-2.jpg" alt="">
+        </div>
+        <div class="presentation__heading wow slideInRight">
+          <h3><span>sarah, where is my coffee?</span></h3>
+          <span class="presentation__info">(post-hardcore|metalcore)</span>
+        </div>
+      </a>
+      <div class="video-block">
+        <figure class="video-block__video-wrapper">
+          <video class="video-block__video" id="video" preload="none" width="100%" height="100%">
+            <source src="http://mazwai.com/system/posts/videos/000/000/218/original/severe-storm-over-mandurah.mp4?1454783161" type="video/mp4">
+          </video>
+        </figure>
+        <button class="video-block__play js-video__play"></button>
+        <div id="text-poster" class="video-block__poster js-video-block-poster wow fadeIn">
+          <h3 class="video-block__heading">see the video from last concert</h3>
+          <p class="video-block__subheading">open-air fest in Munchen 20.05.2015</p>
+          <p class="video-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="layout-dark layout-dark__tracklist-screen wow fadeIn">
+  <div class="container">
+    <h2 id="tracklist-screen" class="layout-dark__section-header">hey! listen to the<br><span>tracklist</span></h2>
+    <div class="tracklist">
+      <audio preload="none" autoplay="none"></audio>
+      <ul class="tracklist__table" id="tracklist">
+        <li><a href="#" data-src="media/bensound-acousticbreeze.mp3">super group - The long way to home<i></i><span class="track-time js-track-time"></span></a></li>
+        <li><a href="#" data-src="media/sound.mp3">soul of the stone  -  take me to he place<i></i><span class="track-time js-track-time"></span></a></li>
+        <li><a href="#" data-src="media/bensound-acousticbreeze.mp3">sarah, where is my coffee - sweet tragedy<i></i><span class="track-time js-track-time"></span></a></li>
+        <li><a href="#" data-src="media/sound.mp3">super group - The long way to home<i></i><span class="track-time js-track-time"></span></a></li>
+        <li><a href="#" data-src="media/sound.mp3">soul of the stone  -  take me to he place<i></i><span class="track-time js-track-time"></span></a></li>
+        <li><a href="#" data-src="media/bensound-acousticbreeze.mp3">sarah, where is my coffee - sweet tragedy<i></i><span class="track-time js-track-time"></span></a></li>
+        <li><a href="#" data-src="media/sound.mp3">super group - The long way to home<i></i><span class="track-time js-track-time"></span></a></li>
+        <li><a href="#" data-src="media/bensound-acousticbreeze.mp3">soul of the stone  -  take me to he place<i></i><span class="track-time js-track-time"></span></a></li>
+        <li><a href="#" data-src="media/bensound-acousticbreeze.mp3">sarah, where is my coffee - sweet tragedy<i></i><span class="track-time js-track-time"></span></a></li>
+        <li><a href="#" data-src="media/bensound-acousticbreeze.mp3">super group - The long way to home<i></i><span class="track-time js-track-time"></span></a></li>
+        <li><a href="#" data-src="media/sound.mp3">soul of the stone  -  take me to he place<i></i><span class="track-time js-track-time"></span></a></li>
+        <li><a href="#" data-src="media/sound.mp3">sarah, where is my coffee - sweet tragedy<i></i><span class="track-time js-track-time"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="layout-dark layout-dark__tickets-screen   tickets">
+  <div class="container">
+    <h2 id="pricing-screen" class="layout-dark__section-header wow fadeIn"><span>tickets</span></h2>
+    <div class="tickets__list   row">
+      <div class="col-xs-12 col-md-4">
+        <div class="tickets__list-item   js-ticket wow bounceInUp">
+          <p class="tickets__heading">dance floor</p>
+          <p class="tickets__subheading">Dancers gonna dance!</p>
+          <p class="tickets__price">100$</p>
+          <div class="tickets__link button button--is-round"><a class="button__link" href="#">buy the ticket</a></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="tickets__list-item   js-ticket wow bounceInDown">
+          <p class="tickets__heading">fan zone</p>
+          <p class="tickets__subheading">For true fans!</p>
+          <p class="tickets__price">150$</p>
+          <div class="tickets__link button button--is-round"><a class="button__link" href="#">buy the ticket</a></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="tickets__list-item   js-ticket wow bounceInUp">
+          <p class="tickets__heading">comfort places</p>
+          <p class="tickets__subheading">Enjoy the music with comfort</p>
+          <p class="tickets__price">200$</p>
+          <div class="tickets__link button button--is-round"><a class="button__link" href="#">buy the ticket</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tickets__merch wow fadeIn">
+    <div class="container">
+      <h2 class="layout-dark__merch-header">Buy the tickets now and get the merch<br>with <span>special price</span>!</h2>
+      <div class="tickets__link-merch button button--is-round"><a class="button__link" href="#">buy the ticket</a></div>
+      <div class="tickets__merch-photo">
+        <img src="pics/merch-photo.png" alt="Merchandise">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="layout-dark layout-dark__sponsors-screen wow fadeIn">
+  <div class="container">
+    <h2 id="sponsors-screen" class="layout-dark__section-header"><span>our sponsors</span></h2>
+    <div class="row">
+      <div class="col-xs-12 col-sm-5">
+        <div class="sponsors">
+          <p class="sponsors__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-7">
+        <div class="sponsors">
+          <div class="sponsors__features">
+            <a href="#" class="sponsors__features-item"><i class="sponsors__features-deco"></i>
+              <i class="sponsors__features-icon   icofont icofont-brand-android-robot"></i>
+              <i class="sponsors__features-icon--sub   icofont icofont-brand-android-robot"></i>
+            </a>
+            <a href="#" class="sponsors__features-item"><i class="sponsors__features-deco"></i>
+              <i class="sponsors__features-icon   icofont icofont-brand-att"></i>
+              <i class="sponsors__features-icon--sub   icofont icofont-brand-att"></i>
+            </a>
+            <a href="#" class="sponsors__features-item"><i class="sponsors__features-deco"></i>
+              <i class="sponsors__features-icon   icofont icofont-brand-bada"></i>
+              <i class="sponsors__features-icon--sub   icofont icofont-brand-bada"></i>
+            </a>
+            <a href="#" class="sponsors__features-item"><i class="sponsors__features-deco"></i>
+              <i class="sponsors__features-icon   icofont icofont-brand-general-electric"></i>
+              <i class="sponsors__features-icon--sub   icofont icofont-brand-general-electric"></i>
+            </a>
+            <a href="#" class="sponsors__features-item"><i class="sponsors__features-deco"></i>
+              <i class="sponsors__features-icon   icofont icofont-brand-designfloat"></i>
+              <i class="sponsors__features-icon--sub   icofont icofont-brand-designfloat"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="layout-dark layout-dark__contacts-screen wow fadeIn">
+  <div class="container">
+    <h2 id="contacts-screen" class="layout-dark__section-header"><span>Contacts</span></h2>
+    <div class="row">
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="contacts">
+          <h4 class="contacts__heading">Address:</h4>
+          <p class="contacts__text">Serpukhovskaya ul., 26<br>Sankt-Peterburg</p>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="contacts">
+          <h4 class="contacts__heading">Phone:</h4>
+          <a class="contacts__text" href="tel:+22354675579">+(22) 35467 5579</a>
+          <a class="contacts__text" href="tel:+22354675579">+(22) 35467 5579</a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="contacts">
+          <h4 class="contacts__heading">E-mail:</h4>
+          <a class="contacts__text" href="mailto:event@studio.com">event@studio.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="layout-dark layout-dark__map-screen">
+  <div id="footer-map"></div>
+</div>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <address class="page-footer__contacts   col-xs-6 col-sm-3">
+        <h5>Contact us</h5>
+        <p>Via Lusitania, 26-34<br>Roma</p>
+        <a href="tel:+22354675579">+(22) 35467 5579</a>
+        <a href="mailto:event@studio.com">event@studio.com</a>
+      </address>
+      <div class="page-footer__socials   col-xs-6 col-sm-4 col-sm-push-5">
+        <h5>Join Us</h5>
+        <p>We are happy to see you in our communities! You are welcome!</p>
+        <ul class="socials">
+          <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+          <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+          <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-tumblr-square" aria-hidden="true"></i></a></li>
+          <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+          <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="page-footer__form   col-xs-12 col-sm-5 col-sm-pull-4">
+        <h5>Subscribe for awesome  news</h5>
+        <p>No spam. Only fresh news about our life and useful articles about the latest interior design trends.</p>
+        <form action="" method="GET">
+          <fieldset>
+            <label for="email">Type your email here</label>
+            <input name="email" type="text" id="email" placeholder="Your email here" value="" autocomplete="off" required>
+            <button><span>Subcribe</span></button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="page-footer__copyright   col-xs-12">
+        <p>© ThemeBusiness. All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function initMap() {
+    var mapDiv = document.getElementById('footer-map');
+    var map = new google.maps.Map(mapDiv, {
+        center: {lat: 44.540, lng: -78.546},
+        zoom: 8,
+        scrollwheel: false
+    });
+  }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD2GTLh7SeztYAZw5ln9zvSnBmkoFq5OM&callback=initMap">
+</script>
+
+<script src="js/audio.js"></script>
+<!-- inject:js -->
+<script src="components/jquery.min.js"></script>
+<script src="components/bootstrap.min.js"></script>
+<script src="components/jquery-ui.min.js"></script>
+<script src="components/jquery.countdown.js"></script>
+<script src="components/lightgallery.min.js"></script>
+<script src="components/validator.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/switcher.js"></script>
+<script src="js/wow.min.js"></script>
+<!-- endinject -->
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+.timer{
+
+  font-family: @font-third;
+
+  &__item-caption{
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    bottom: -20px;
+    text-align: center;
+    width: 80px;
+
+    font-size: 2vw;
+    line-height: 1;
+    color: @color-polygon-timer-text;
+    font-family: @font-third;
+
+    @media screen and (min-width: @screen-sm-min){
+      font-size: @fs-polygon-timer-text;
+      line-height: @fs-polygon-timer-text;
+    }
+  }
+
+  &__item{
+    display: table-cell;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 0;
+    position: relative;
+    font-size: 6vw;
+    line-height: 1;
+    color: @color-polygon-timer;
+
+    @media screen and (min-width: @screen-sm-min){
+      padding-bottom: 23px;
+    }
+    @media screen and (min-width: @screen-md-min){
+      font-size: @fs-polygon-timer;
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+
+    &:not(:last-child):after{
+      content: "";
+      position: absolute;
+      height: 40px;
+      width: 1px;
+      background: @color-timer-separator;
+      right: 1px;
+      top: 50%;
+      margin-top: -20px;
+    }
+  }
+}

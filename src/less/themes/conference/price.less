@@ -1,0 +1,68 @@
+.price{
+
+  &__ticket{
+    padding: 40px 20px 50px 20px;
+    background: @color-bg-ticket;
+    border: 1px solid @color-border-ticket;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media screen and (min-width: @screen-md-min){
+      padding: 78px 50px 84px 50px;
+    }
+  }
+
+  &__text{
+    margin-bottom: 85px;
+  }
+
+  &__header{
+    margin-bottom: 3px;
+    margin-bottom: 31px;
+    color: @color-header-ticket;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: @bold;
+    text-transform: uppercase;
+  }
+
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list-item{
+    color: @color-item-ticket;
+    font-size: 24px;
+    line-height: 2;
+    font-weight: @regular;
+
+    &:last-child{
+      margin-bottom: 40px;
+      @media screen and (min-width: @screen-md-min){
+        margin-bottom: 78px;
+      }
+    }
+
+    &--nope{
+      text-decoration: line-through;
+    }
+  }
+
+  &__cost{
+    margin-bottom: 32px;
+    color: @color-price-ticket;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: @bold;
+  }
+
+  &__btn{
+    width: 100%;
+
+    &:hover{
+      
+    }
+  }
+}

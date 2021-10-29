@@ -1,0 +1,231 @@
+.page-header{
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 0px;
+  border: none;
+  margin: 0;
+  z-index: 10;
+  background-color: @color-main-bg;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+
+  &__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: filter 3.0s;
+    filter: blur(15px);
+    overflow: hidden;
+    background-attachment: fixed;
+
+
+    &--is-loaded{
+      filter: none;
+    }
+
+    div{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      background-attachment: fixed;
+    }
+  }
+
+  @media screen and (min-width: @screen-md-min){
+    background-position-y: @position-hero-bg;
+  }
+
+  &--is-shown{
+    background: @color-header-bg;
+    opacity: 0.9;
+    background-image: none !important;
+  }
+
+  &__link{
+      padding-top: 15px;
+      padding-bottom: 7px;
+
+      font-size: 18px;
+      line-height: 18px;
+      color: @color-nav-secondary;
+      font-weight: normal;
+
+      font-family: @font-second;
+      text-transform: uppercase;
+
+      position: relative;
+      z-index: 10;
+
+      @media screen and (min-width: @grid-float-breakpoint){
+        font-size: 18px;
+        line-height: 18px;
+        color: @color-nav-main;
+        padding-left: 14px;
+        padding-right: 14px
+      }
+
+      &:hover{
+        text-decoration: none;
+        color: @color-nav-secondary;
+
+        @media screen and (min-width: @grid-float-breakpoint){
+          color: @color-nav-main;
+        }
+      }
+
+      &:focus{
+        color: @color-nav-main;
+      }
+
+      &::after{
+        content: "";
+        position: absolute;
+        top: -11px;
+        left: 50%;
+        margin-left: -12px;
+
+        border-width: 17px 15px 17px 30px;
+        border-style: solid;
+        border-left-color: @color-hover-nav;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.3s;
+
+        @media screen and (min-width: @grid-float-breakpoint){
+            top: 8px;
+        }
+      }
+
+      &:hover::after{
+        opacity: 1;
+        transform: rotate(-10deg);
+      }
+
+      &--is-active{
+        color: @color-nav-secondary;
+        @media screen and (min-width: @grid-float-breakpoint){
+          color: @color-nav-main;
+        }
+      }
+  }
+
+  &__btn{
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+    min-height: 44px;
+
+    .icon-bar{
+      width: 30px;
+      height: 5px;
+      background: @color-nav-hamburger;
+      transition: transform 0.3s;
+
+      &--is-toggled{
+
+        &:nth-child(1){
+          height: 7px;
+          position: relative;
+          top: 8px;
+          background-color: @color-nav-hamburger--is-toggled;
+          transform: rotate(-45deg);
+        }
+        &:nth-child(2){
+          opacity: 0;
+        }
+        &:nth-child(3){
+          height: 7px;
+          position: relative;
+          bottom: 11px;
+          background-color: @color-nav-hamburger--is-toggled;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  &__brand-text{
+    // fill: url("#brandgradient");
+    font-size: 60px;
+    line-height: 1;
+    font-family: "Oswald";
+    font-weight: bold;
+  }
+
+  .stop1{
+    color: #4051d0;
+  }
+  .stop2{
+    color: #7508d0;
+  }
+  .stop3{
+    color: #7508d0;
+  }
+
+  &__brand{
+    display: block;
+    padding-top: 2px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    font-family: @font-second;
+    text-transform: uppercase;
+    color: @color-brand;
+
+    &:hover{
+      text-decoration: none;
+      color: @color-brand;
+    }
+
+    &--is-hidden{
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  &__nav{
+
+    li{
+      padding-bottom: 65px;
+
+      @media screen and (min-width: @grid-float-breakpoint){
+        float: left;
+        padding-bottom: 0;
+      }
+      @media screen and (min-width: @screen-sm-min){
+        padding-left: 0px;
+      }
+      @media screen and (min-width: @screen-md-min){
+        padding-left: 25px;
+      }
+      @media screen and (min-width: @screen-lg-min){
+        padding-left: 45px;
+      }
+    }
+
+    ul{
+      text-align: center;
+      margin-top: 80px;
+      padding-top: 24px;
+
+      @media screen and (min-width: @grid-float-breakpoint){
+        float: right;
+        margin-top: 0;
+      }
+    }
+  }
+}

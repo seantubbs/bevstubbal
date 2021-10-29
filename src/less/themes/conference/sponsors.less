@@ -1,0 +1,46 @@
+.sponsors{
+
+  &__text{
+    margin-bottom: 85px;
+  }
+
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    width: 100%;
+  }
+
+  &__item{
+    width: 33%;
+    padding: 35px 0px 35px 0px;
+    display: inline-block;
+
+    &:nth-child(-n + 3){
+      border-bottom: 1px solid @color-sponsor-separator;
+    }
+    &:nth-child(-n + 2), &:nth-child(n + 4){
+      border-right: 1px solid @color-sponsor-separator;
+    }
+    &:last-child{
+      border-right: none;
+    }
+  }
+
+  &__link{
+    display: block;
+    text-align: center;
+    color: @color-icon-sponsor;
+    transition: all 0.3s;
+
+    &:hover{
+      color: @color-icon-sponsor--hover;
+    }
+
+    i{
+      font-size: 65px;
+      line-height: 1;
+    }
+  }
+}

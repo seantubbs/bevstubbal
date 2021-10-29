@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Event - Bootstrap Theme</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Oswald:300,400,700" rel="stylesheet">
+  <!-- inject:css -->
+  <!-- endinject -->
+  <link rel="stylesheet" href="css/fest-light.css">
+</head>
+<body>
+  <!-- style="background-image: url(pics/fest-dark-header-bg-sliced.png)" -->
+<header class="page-header   js-page-header" >
+  <div class="page-header__background   js-header-background" data-small="pics/fest-light-header-bg--small.jpg" data-large="pics/fest-light-header-bg.jpg"></div>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed    page-header__btn   js-mobile-menu-btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="page-header__brand   js-page-header__brand" href="#">Event.</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse   page-header__nav" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#about-screen" class="page-header__link">about</a></li>
+              <li><a href="#schedule-screen" class="page-header__link">schedule</a></li>
+              <li><a href="#pricing-screen" class="page-header__link">pricing</a></li>
+              <li><a href="#gallery-screen" class="page-header__link">gallery</a></li>
+              <li><a href="#contacts-screen" class="page-header__link">contacts</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 wow fadeIn">
+          <h1 class="hero__header">Color</br>fest</span></h1>
+          <p class="hero__subheader">The biggest festival ever!</p>
+          <a class="button button__hero" href="#">Buy the ticket <i class="fa fa-arrow-circle-o-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__decoration-slice"></div>
+  </div>
+</header>
+
+<div id="about-screen" class="about   layout layout__about-screen">
+  <div class="container">
+    <div class="about">
+      <div class="about__block wow fadeInLeft">
+        <div class="about__timer-wrap">
+          <p class="about__timer-header">Coming very soon!</p>
+          <div id="countdown" class="timer">
+          </div>
+        </div>
+      </div>
+      <div class="about__block wow fadeInRight">
+        <h2 class="layout__section-header">WTF - What The Fest?</h2>
+        <p class="about__text--highlighted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com.</p>
+        <a class="about__btn button button__hero" href="#">Learn more <i class="fa fa-arrow-circle-o-right"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="schedule-screen" class="schedule   layout layout__schedule-screen">
+  <div class="container">
+    <h2 class="layout__section-header layout__section-header--decorated">Fest schedule</h2>
+    <div class="row">
+      <!-- text -->
+      <div class="col-xs-12 col-md-6 col-md-push-6">
+        <div class="schedule__event-order"><span>01/</span>06</div>
+        <div class="schedule__text-block schedule__text-block--right schedule__text-block--card">
+          <ul class="schedule__list">
+            <li class="schedule__event">
+              <p class="schedule__event-heading"><time class="schedule__event-time">10:00</time>Awesome opening!</p>
+              <p class="schedule__event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+            </li>
+            <li class="schedule__event">
+              <p class="schedule__event-heading"><time class="schedule__event-time">12:30</time>Let’s dance!</p>
+              <p class="schedule__event-text">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+            </li>
+            <li class="schedule__event">
+              <p class="schedule__event-heading"><time class="schedule__event-time">14:00</time> Open-air party</p>
+              <p class="schedule__event-text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </li>
+            <li class="schedule__event">
+              <p class="schedule__event-heading"><time class="schedule__event-time">16:00</time>Evening is coming</p>
+              <p class="schedule__event-text">Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- image -->
+      <div class="col-xs-12 col-md-6 col-md-pull-6">
+        <figure class="schedule__image-block schedule__image-block--left wow fadeInLeft">
+          <img src="pics/placeholder-schedule-fest-1.jpg" alt="">
+        </figure>
+      </div>
+    </div>
+    <div class="row">
+      <!-- text -->
+      <div class="col-xs-12 col-md-6">
+        <div class="schedule__event-order"><span>02/</span>06</div>
+        <div class="schedule__text-block schedule__text-block--left schedule__text-block--card">
+          <ul class="schedule__list">
+            <li class="schedule__event">
+              <p class="schedule__event-heading"><time class="schedule__event-time">10:00</time>the show must go on</p>
+              <p class="schedule__event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+            </li>
+            <li class="schedule__event">
+              <p class="schedule__event-heading"><time class="schedule__event-time">12:30</time>Let’s dance!</p>
+              <p class="schedule__event-text">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+            </li>
+            <li class="schedule__event">
+              <p class="schedule__event-heading"><time class="schedule__event-time">14:00</time> Open-air party</p>
+              <p class="schedule__event-text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </li>
+            <li class="schedule__event">
+              <p class="schedule__event-heading"><time class="schedule__event-time">16:00</time>Evening is coming</p>
+              <p class="schedule__event-text">Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- image -->
+      <div class="col-xs-12 col-md-6">
+        <figure class="schedule__image-block schedule__image-block--right wow fadeInRight">
+          <img src="pics/placeholder-schedule-fest-2.jpg" alt="">
+        </figure>
+      </div>
+    </div>
+    <div class="row">
+      <!-- text -->
+      <div class="col-xs-12 col-md-6 col-md-push-6">
+        <div class="schedule__event-order"><span>03/</span>06</div>
+        <div class="schedule__text-block schedule__text-block--right schedule__text-block--card">
+          <ul class="schedule__list">
+            <li class="schedule__event">
+              <p class="schedule__event-heading"><time class="schedule__event-time">10:00</time>Awesome opening!</p>
+              <p class="schedule__event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+            </li>
+            <li class="schedule__event">
+              <p class="schedule__event-heading"><time class="schedule__event-time">12:30</time>Let’s dance!</p>
+              <p class="schedule__event-text">Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+            </li>
+            <li class="schedule__event">
+              <p class="schedule__event-heading"><time class="schedule__event-time">14:00</time> Open-air party</p>
+              <p class="schedule__event-text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </li>
+            <li class="schedule__event">
+              <p class="schedule__event-heading"><time class="schedule__event-time">16:00</time>Evening is coming</p>
+              <p class="schedule__event-text">Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- image -->
+      <div class="col-xs-12 col-md-6 col-md-pull-6">
+        <figure class="schedule__image-block schedule__image-block--left wow fadeInLeft">
+          <img src="pics/placeholder-schedule-fest-3.jpg" alt="">
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="video-screen" class="layout layout__video-screen">
+  <div class="video-block">
+    <figure class="video-block__video-wrapper">
+      <!-- poster="pics/video-placeholder-fest-dark.jpg" -->
+      <video class="video-block__video" id="video" preload="none"  width="100%" height="100%">
+        <source src="http://mazwai.com/system/posts/videos/000/000/218/original/severe-storm-over-mandurah.mp4?1454783161" type="video/mp4">
+      </video>
+    </figure>
+    <button class="video-block__play js-video__play"></button>
+    <div id="text-poster" class="video-block__poster js-video-block-poster wow fadeIn">
+      <h2 class="video-block__heading">special guest :</h2>
+      <h3 class="video-block__band">unknow artist</h3>
+      <p class="video-block__subheading">(See the video fom last concert)</p>
+      <p class="video-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    </div>
+  </div>
+</div>
+
+<div id="pricing-screen" class="price   layout layout__price-screen">
+  <div class="container">
+    <h2 class="layout__section-header layout__section-header--decorated">How much it costs?</h2>
+    <div class="price__flex   row">
+      <div class="price__flex-item   col-xs-12 col-sm-12 col-md-4">
+        <p class="price__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+      </div>
+      <div class="price__flex-item   col-xs-12 col-sm-6 col-md-4">
+        <div class="price__card wow fadeInUp">
+          <div class="price__card-inner">
+            <div class="price__card-top">
+              <p class="price__card-heading">fan zone</p>
+              <p class="price__card-text">Funny party aroud the main scene with drinks and games</p>
+            </div>
+            <div class="price__card-bottom">
+              <p class="price__card-price">it’s free</p>
+              <a href="#" class="price__card-btn button button__standart">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="price__flex-item   col-xs-12 col-sm-6 col-md-4">
+        <div class="price__card wow fadeInDown">
+          <div class="price__card-inner">
+            <div class="price__card-top">
+              <p class="price__card-heading">exclusive</p>
+              <p class="price__card-text">Funny party on the main scene with drinks and games. Free food and bus transfer  are inclusive!</p>
+            </div>
+            <div class="price__card-bottom">
+              <p class="price__card-price">100$</p>
+              <a href="#" class="price__card-btn button button__standart">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="gallery-screen" class="gallery   layout layout__gallery-screen">
+  <div class="container">
+    <h2 class="layout__section-header layout__section-header--decorated">photos from last fest</h2>
+    <div id="lightgallery" class="gallery__container">
+      <a href="pics/fest-gallery-1.jpg" class="gallery__item gallery__item--big"><img src="pics/fest-gallery-1.jpg" alt="Gallery placeholder" class="gallery__image"></a>
+      <a href="pics/fest-gallery-2.jpg" class="gallery__item gallery__item--small"><img src="pics/fest-gallery-2.jpg" alt="Gallery placeholder" class="gallery__image"></a>
+      <a href="pics/fest-gallery-3.jpg" class="gallery__item gallery__item--small"><img src="pics/fest-gallery-3.jpg" alt="Gallery placeholder" class="gallery__image"></a>
+      <a href="pics/fest-gallery-4.jpg" class="gallery__item gallery__item--small"><img src="pics/fest-gallery-4.jpg" alt="Gallery placeholder" class="gallery__image"></a>
+      <a href="pics/fest-gallery-5.jpg" class="gallery__item gallery__item--small"><img src="pics/fest-gallery-5.jpg" alt="Gallery placeholder" class="gallery__image"></a>
+      <a href="pics/fest-gallery-6.jpg" class="gallery__item gallery__item--big"><img src="pics/fest-gallery-6.jpg" alt="Gallery placeholder" class="gallery__image"></a>
+    </div>
+    <div class="gallery__btn">
+      <a href="#" class="button button__standart">More photos</a>
+    </div>
+  </div>
+</div>
+
+<div id="contacts-screen" class="layout layout__contacts-screen">
+  <div class="container">
+    <h2 class="layout__section-header layout__section-header--decorated">Contact us</h2>
+  </div>
+  <div class="contacts" style="background-image: url(pics/bg-fest-contacts-dark.jpg)">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-push-6">
+          <div class="contacts__wrapper wow slideInRight">
+            <div class="contacts__item">
+              <h4 class="contacts__header">where are we?</h4>
+              <p class="contacts__text">Serpukhovskaya ul., 26
+              Sankt-Peterburg</p>
+              <i class="fa fa-map-signs"></i>
+            </div>
+            <div class="contacts__item">
+              <h4 class="contacts__header">send us a letter</h4>
+              <a class="contacts__text" href="mailto:crafty@superevent.co">crafty@superevent.co</a>
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="contacts__item">
+              <h4 class="contacts__header">Call us</h4>
+              <a class="contacts__text" href="tel:+22354675579">+(22) 35467 5579</a>
+              <a class="contacts__text" href="tel:+22354675579">+(22) 35467 5579</a>
+              <i class="fa fa-phone-square"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="layout layout__map-screen">
+  <div id="footer-map"></div>
+</div>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <address class="page-footer__contacts   col-xs-6 col-sm-3">
+        <h5 class="page-footer__header">Contact us</h5>
+        <p class="page-footer__text">Via Lusitania, 26-34</br>Roma</p>
+        <a href="tel:+22354675579">+(22) 35467 5579</a>
+        <a href="mailto:event@studio.com">event@studio.com</a>
+      </address>
+      <div class="page-footer__socials   col-xs-6 col-sm-4 col-sm-push-5">
+        <h5 class="page-footer__header">Join Us</h5>
+        <p class="page-footer__text">We are happy to see you in our communities! You are welcome!</p>
+        <ul class="socials">
+          <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+          <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+          <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-tumblr-square" aria-hidden="true"></i></a></li>
+          <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+          <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="page-footer__form   col-xs-12 col-sm-5 col-sm-pull-4">
+        <h5 class="page-footer__header">Subscribe for awesome  news</h5>
+        <p class="page-footer__text">No spam. Only fresh news about our life and useful articles about the latest interior design trends.</p>
+        <form action="" method="">
+          <fieldset>
+            <label for="email">Type your email here</label>
+            <input type="text" id="email" placeholder="Your email here" value="" autocomplete="off" required>
+            <input type="submit" value="Subcribe" aria-label="Submit"></input>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="page-footer__copyright   col-xs-12">
+        <p>© ThemeEvent. All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function initMap() {
+    var mapDiv = document.getElementById('footer-map');
+    var map = new google.maps.Map(mapDiv, {
+        center: {lat: 44.540, lng: -78.546},
+        zoom: 8,
+        scrollwheel: false
+    });
+  }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD2GTLh7SeztYAZw5ln9zvSnBmkoFq5OM&callback=initMap">
+</script>
+
+<script src="js/audio.js"></script>
+<!-- inject:js -->
+<!-- endinject -->
+</body>
+</html>

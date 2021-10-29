@@ -1,0 +1,101 @@
+.speakers{
+
+  &__control{
+    position: relative;
+
+    &.active::after{
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background: #ffffff;
+      top: 21px;
+      right: -90px;
+      opacity: 0;
+      display: none;
+
+      @media screen and (min-width: @screen-md-min){
+        opacity: 1;
+        width: 70px;
+        right: -90px;
+      }
+      @media screen and (min-width: @screen-lg-min){
+        width: 100px;
+        right: -110px;
+      }
+    }
+  }
+
+  &__text{
+    margin-bottom: 85px;
+  }
+
+  &__tab-nav{
+
+  }
+
+  &__tab-content{
+    padding-right: 75px;
+    position: relative;
+  }
+
+  &__header{
+    position: absolute;
+
+    text-transform: lowercase;
+    font-weight: @bold;
+
+    transform: rotate(-90deg);
+    bottom: 185px;
+    right: -155px;
+
+    &::after{
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border: 8px solid @color-decorations;
+      border-radius: 50%;
+      top: 7px;
+      left: -43px;
+    }
+  }
+
+  &__tab-text{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__image{
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    img{
+      width: 100%;
+      margin-bottom: 44px;
+    }
+
+  }
+
+  &__socials{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__socials-item{
+    display: inline-block;
+    margin-right: 12px;
+  }
+
+  &__socials-link{
+    color: @color-tab-socials;
+    transition: all 0.3s;
+
+    &:hover{
+      color: @color-tab-socials--hover;
+    }
+  }
+}

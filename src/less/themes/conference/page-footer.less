@@ -1,0 +1,116 @@
+.page-footer{
+
+  padding-top: 64px;
+
+  background-color: @color-bg-footer;
+  color: @color-text-footer;
+
+  &__header{
+    margin-bottom: 14px;
+    color: @color-header-footer;
+    line-height: 48px;
+    font-weight: bold;
+  }
+
+  &__text{
+    margin-bottom: 15px;
+    color: @color-text-footer;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__socials{
+    margin-bottom: 15px;
+
+    @media screen and (min-width: @grid-float-breakpoint){
+      margin-bottom: 0;
+    }
+  }
+
+  &__contacts{
+
+    margin-bottom: 15px;
+
+    @media screen and (min-width: @grid-float-breakpoint){
+      margin-bottom: 0;
+    }
+
+    a{
+      display: block;
+      margin-bottom: 15px;
+      color: @color-text-footer;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__form{
+
+    margin-bottom: 80px;
+
+    p{
+      margin-bottom: 25px;
+    }
+
+    fieldset{
+      position: relative;
+      font-size: 0;
+      &:before {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        content: "";
+      }
+    }
+
+    input[type="text"]{
+      width: 60%;
+      margin-right: 13px;
+
+      vertical-align: bottom;
+
+      border: none;
+      border-bottom: 1px solid @color-input-placeholder;
+      background-color: transparent;
+      font-size: 16px;
+      line-height: 26px;
+
+      &::placeholder{
+        color: @color-input-placeholder;
+      }
+
+      @media screen and (min-width: @grid-float-breakpoint){
+        width: 50%;
+      }
+    }
+
+    input[type="submit"]{
+          width: 35%;
+          vertical-align: bottom;
+          padding: 14px 0px 13px 0px;
+          border: 2px solid @color-border-btn;
+          background: @color-bg-btn;
+          text-transform: uppercase;
+
+          font-size: 16px;
+          line-height: 16px;
+          color: @color-text-btn;
+
+          transition: all 0.3s;
+
+          &:hover{
+          background: @color-bg-btn--hover;
+          color: @color-text-btn--hover;
+          }
+        }
+  }
+
+  &__copyright{
+    margin-bottom: 25px;
+    text-align: center;
+    p{
+      color: #898888;
+      font-size: 16px;
+    }
+  }
+}

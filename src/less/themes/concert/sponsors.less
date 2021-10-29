@@ -1,0 +1,201 @@
+.sponsors{
+
+  margin-bottom: 90px;
+
+  &__text{
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+  &__features{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  &__features-item{
+    margin: 0px -25px 0px -25px;
+    display: inline-block;
+    width: 100px;
+    height: 98px;
+
+    position: relative;
+
+    transition: all 0.3s;
+
+    .sponsors__features-deco{
+      width: 0;
+      height: 0;
+      border-style: solid;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      transition: all 0.3s;
+      z-index: 1;
+    }
+
+    @media screen and (min-width: 400px){
+      margin: 0px -18px 0px -18px;
+    }
+    @media screen and (min-width: @screen-md-min){
+      margin: 0px -20px 0px -20px;
+      width: 112px;
+      height: 98px;
+    }
+    @media screen and (min-width: @screen-lg-min){
+      margin: 0px -20px 0px -20px;
+      width: 150px;
+      height: 130px;
+    }
+
+    &:hover .sponsors__features-icon--sub{
+      opacity: 1;
+    }
+
+    .sponsors__features-icon--sub{
+      position: absolute;
+      font-family: "icofont";
+      font-size: 36px;
+      color: @color-white;
+      z-index: 2;
+      opacity: 0;
+      transition: all 0.3s;
+
+      @media screen and (min-width: @screen-md-min){
+        font-size: 46px;
+      }
+      @media screen and (min-width: @screen-lg-min){
+        font-size: 56px;
+      }
+    }
+
+    .sponsors__features-icon{
+      position: absolute;
+      font-family: "icofont";
+      font-size: 30px;
+      color: @color-features-icons;
+      z-index: 3;
+
+      @media screen and (min-width: @screen-md-min){
+        font-size: 40px;
+      }
+      @media screen and (min-width: @screen-lg-min){
+        font-size: 50px;
+      }
+    }
+
+    // main colored icons
+    &:nth-child(2n) > .sponsors__features-icon{
+      top: 36px;
+      left: 35px;
+      @media screen and (min-width: @screen-sm-min){
+        top: 35px;
+        left: 35px;
+      }
+      @media screen and (min-width: @screen-md-min){
+        top: 36px;
+        left: 37px;
+      }
+      @media screen and (min-width: @screen-lg-min){
+        top: 50px;
+        left: 50px;
+      }
+    }
+
+    // white icons under colored
+    &:nth-child(2n) > .sponsors__features-icon--sub{
+      top: 32px;
+      left: 32px;
+      @media screen and (min-width: @screen-sm-min){
+        top: 31px;
+        left: 32px;
+      }
+      @media screen and (min-width: @screen-md-min){
+        top: 32px;
+        left: 34px;
+      }
+      @media screen and (min-width: @screen-lg-min){
+        top: 47px;
+        left: 47px;
+      }
+    }
+
+    // main colored icons
+    &:nth-child(2n+1) > .sponsors__features-icon{
+      top: 12px;
+      left: 36px;
+      @media screen and (min-width: @screen-sm-min){
+        top: 12px;
+        left: 36px;
+      }
+      @media screen and (min-width: @screen-md-min){
+        top: 10px;
+        left: 36px;
+      }
+      @media screen and (min-width: @screen-lg-min){
+        top: 15px;
+        left: 50px;
+      }
+    }
+    // white icons under colored
+    &:nth-child(2n+1) > .sponsors__features-icon--sub{
+      top: 7px;
+      left: 33px;
+      @media screen and (min-width: @screen-sm-min){
+        top: 8px;
+        left: 32px;
+      }
+      @media screen and (min-width: @screen-md-min){
+        top: 6px;
+        left: 33px;
+      }
+      @media screen and (min-width: @screen-lg-min){
+        top: 11px;
+        left: 47px;
+      }
+    }
+
+    &:nth-child(2n){
+
+      &:hover .sponsors__features-deco{
+        border-color: transparent transparent @color-features-icons transparent;
+      }
+
+      .sponsors__features-deco{
+        border-width: 0 50px 87px 50px;
+        border-color: transparent transparent @color-features-shapes transparent;
+        @media screen and (min-width: @screen-md-min){
+          border-width: 0 56.5px 98px 56.5px;
+        }
+        @media screen and (min-width: @screen-lg-min){
+          border-width: 0 75px 130px 75px;
+        }
+      }
+    }
+
+    &:nth-child(2n+1){
+
+      &:hover .sponsors__features-deco{
+        border-color: @color-features-icons transparent transparent transparent;
+      }
+
+      .sponsors__features-deco{
+        border-width: 87px 50px 0 50px;
+        border-color: @color-features-shapes transparent transparent transparent;
+        @media screen and (min-width: @screen-md-min){
+          border-width: 98px 56.5px 0 56.5px;
+        }
+        @media screen and (min-width: @screen-lg-min){
+          border-width: 130px 75px 0 75px;
+        }
+      }
+    }
+
+    &:hover .sponsors__features-deco{
+      transform: scale(0.9);
+      opacity: 0.8;
+    }
+  }
+}
