@@ -50,9 +50,9 @@ $(document).ready(function () {
   // Countdown timer
   var currTime = new Date();
   var currDate = currTime.getDate();
-  var currMonth = currTime.getMonth() + 2;
+  var currMonth = currTime.getMonth();
   var currYear = currTime.getFullYear();
-  var eventTime = currYear + "/" + currMonth + "/" + currDate;
+  var eventTime = "2022/06/11 15:00:00";
 
   $('#countdown').countdown(eventTime, function(event) {
     $(this).html(event.strftime(''
