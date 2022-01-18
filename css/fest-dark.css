@@ -4319,6 +4319,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     min-height: 50px;
     margin-bottom: 0px;
     border: 1px solid transparent;
+
+}
+
+@media only screen and (max-device-width: 480px) {
+    .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        background-color: #423338;
+        padding-top: 65px;
+        top: 0;
+    }
 }
 
 @media (min-width: 768px) {
@@ -20323,7 +20335,7 @@ button.close {
 .layout__section-header--decorated {
     padding: 6px 0px 35px 0px;
     position: relative;
-    z-index: 10;
+    z-index: 9;
     display: inline-block;
 }
 
@@ -20955,7 +20967,7 @@ button.close {
     padding: 70px 0px 65px 0px;
     text-align: center;
     border: 3px solid #ffffff;
-    z-index: 10;
+    z-index: 9;
     margin-bottom: 60px;
 }
 
